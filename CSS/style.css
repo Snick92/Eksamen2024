@@ -1,0 +1,216 @@
+.index-html,
+.index-html * {
+  box-sizing: border-box;
+}
+.index-html {
+  background: #fffaf4;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 52px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: 3477px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-5 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  width: 2560px;
+  max-width: 2560px;
+  position: relative;
+}
+.rectangle-3 {
+  background: #d9d9d9;
+  flex: 1;
+  height: 113px;
+  position: relative;
+}
+.v-re-mest-popul-re-produkter {
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 121.95%;
+  font-weight: 700;
+  position: relative;
+  width: 2560px;
+}
+.frame-2 {
+  background: #ff9a9a;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-shrink: 0;
+  width: 301.86px;
+  height: 303px;
+  max-width: 2560px;
+  position: relative;
+  overflow: hidden;
+}
+.scaling-test-alfa-bravo-charlie-delta-foxtrot-golf-hotel-india-juliet-kilo-lima-mike-november-oscar-papa-quebec-romeo-sierra-tango-uniform-victor-whiskey-x-ray-yankee-zulu {
+  color: #000000;
+  text-align: left;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 16px;
+  line-height: 121.95%;
+  font-weight: 700;
+  position: relative;
+  align-self: stretch;
+  flex: 1;
+}
+.frame-3 {
+  background: #c3f7c6;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-shrink: 0;
+  width: 301.86px;
+  height: 303px;
+  max-width: 2560px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-6 {
+  background: #c3d0f7;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-shrink: 0;
+  width: 301.86px;
+  height: 303px;
+  max-width: 2560px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-7 {
+  background: #f2f7c3;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-shrink: 0;
+  width: 301.86px;
+  height: 303px;
+  max-width: 2560px;
+  position: relative;
+  overflow: hidden;
+}
+.v-re-mest-popul-re-kategorier {
+  color: #000000;
+  text-align: center;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 20px;
+  line-height: 121.95%;
+  font-weight: 700;
+  position: relative;
+  width: 2560px;
+  max-width: 2560px;
+}
+.frame-4 {
+  background: #fbb1e8;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-shrink: 0;
+  width: 301.86px;
+  height: 303px;
+  max-width: 2560px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-8 {
+  background: #b1fbf5;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-shrink: 0;
+  width: 301.86px;
+  height: 303px;
+  max-width: 2560px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-9 {
+  background: #fbe1b1;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-shrink: 0;
+  width: 301.86px;
+  height: 303px;
+  max-width: 2560px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-10 {
+  background: #6dd476;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-shrink: 0;
+  width: 301.86px;
+  height: 303px;
+  max-width: 2560px;
+  position: relative;
+  overflow: hidden;
+}
+.logo {
+  color: #000000;
+  text-align: left;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 24px;
+  line-height: 121.95%;
+  font-weight: 700;
+  position: absolute;
+  left: calc(50% - 39px);
+  top: 46px;
+  width: 79px;
+  height: 36px;
+}
