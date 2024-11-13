@@ -3,3 +3,8 @@ antakelser, tolkninger og kilder til bilder og annet brukt materiale. Mangler de
 dokumentet, blir oppgaven ikke godkjent. Se mer under Leveranse på Canvas.
 
 Testoppdatering av GitHub..
+
+
+      Alfa, Bravo, Charlie, Delta, Foxtrot, Golf, Hotel, India, Juliet, Kilo,
+      Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform,
+      Victor, Whiskey, X-ray, Yankee, Zulu

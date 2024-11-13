@@ -3,106 +3,81 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="ikoner/css/fontawesome.css" rel="stylesheet" />
-        <link href="ikoner/css/brands.css" rel="stylesheet" />
-        <link href="ikoner/css/solid.css" rel="stylesheet" />
+        <link href="CSS/ikoner/css/fontawesome.css" rel="stylesheet" />
         <link rel="stylesheet" href="CSS/style.css">
-        <title>Zalando Light | Forside</title>
+        <title>Forside</title>
 </head>
-<div class="index-html">
-  <div class="frame-5">
-    <div class="rectangle-3"></div>
-  </div>
-  <div class="v-re-mest-popul-re-produkter">Våre mest populære produkter</div>
-  <div class="frame-2">
-    <div
-      class="scaling-test-alfa-bravo-charlie-delta-foxtrot-golf-hotel-india-juliet-kilo-lima-mike-november-oscar-papa-quebec-romeo-sierra-tango-uniform-victor-whiskey-x-ray-yankee-zulu"
-    >
-      Scaling-test:
-      <br />
-      Alfa, Bravo, Charlie, Delta, Foxtrot, Golf, Hotel, India, Juliet, Kilo,
-      Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform,
-      Victor, Whiskey, X-ray, Yankee, Zulu
+<body>
+    <div id="grid-container">
+        <header id="global-header">
+            <nav class="flex-space-because">
+                <i class="fa-solid fa-burger" onclick="toggleMenu()"></i>
+                <ul class="flex-menu" id="menu">
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="product.html">Produkter</a></li>
+                    <li><a href="index.html">LOGO</a></li>
+                    <li><a href="index.html/kategorier">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
+                </ul>
+                <form>
+                    <label for="search">Søk</label>
+                    <input type="search" placeholder="Her kan du søke etter produkter..." id="search">
+                    <input type="submit" value="søk">
+                </form>
+            </nav>
+        </header>
+        <main>
+            <section id="banner">
+                <h2 id="produkter">Våre mest populære produkter</h2>
+            </section>
+            <section class="flex-space-because">
+                <h2>Produkter</h2>
+                <article class="card">
+                    <img src="https://picsum.photos/300" alt="Eksempelprodukt">
+                    <a href="#"><h3>Produktnavn</h3></a>
+                    <a>Beskrivelse av produkt</a>
+                    <p>pris kr</p>
+                </article>
+                <article class="card">
+                    <img src="https://picsum.photos/300" alt="Eksempelprodukt">
+                    <a href="#"><h3>Produktnavn</h3></a>
+                    <a>Beskrivelse av produkt</a>
+                    <p>pris kr</p>
+                </article>                
+                <article class="card">
+                    <img src="https://picsum.photos/300" alt="Eksempelprodukt">
+                    <a href="#"><h3>Produktnavn</h3></a>
+                    <a>Beskrivelse av produkt</a>
+                    <p>pris kr</p>
+                </article>                
+                <article class="card">
+                    <img src="https://picsum.photos/300" alt="Eksempelprodukt">
+                    <a href="#"><h3>Produktnavn</h3></a>
+                    <a>Beskrivelse av produkt</a>
+                    <p>pris kr</p>
+                </article>
+            </section>
+            <section id="banner">
+                <h2 id="kategorier">Våre mest populære kategorier</h2>
+            </section>
+            <section>
+                <a href="#" alt="kategori 1">Kategori 1</a>
+                <a href="#" alt="kategori 2">Kategori 2</a>
+                <a href="#" alt="kategori 3">Kategori 3</a>
+                <a href="#" alt="kategori 4">Kategori 4</a>
+            </section>
+        </main>
+        <footer>Eksamen_2024</footer>
     </div>
-  </div>
-  <div class="frame-3">
-    <div
-      class="scaling-test-alfa-bravo-charlie-delta-foxtrot-golf-hotel-india-juliet-kilo-lima-mike-november-oscar-papa-quebec-romeo-sierra-tango-uniform-victor-whiskey-x-ray-yankee-zulu"
-    >
-      Scaling-test:
-      <br />
-      Alfa, Bravo, Charlie, Delta, Foxtrot, Golf, Hotel, India, Juliet, Kilo,
-      Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform,
-      Victor, Whiskey, X-ray, Yankee, Zulu
-    </div>
-  </div>
-  <div class="frame-6">
-    <div
-      class="scaling-test-alfa-bravo-charlie-delta-foxtrot-golf-hotel-india-juliet-kilo-lima-mike-november-oscar-papa-quebec-romeo-sierra-tango-uniform-victor-whiskey-x-ray-yankee-zulu"
-    >
-      Scaling-test:
-      <br />
-      Alfa, Bravo, Charlie, Delta, Foxtrot, Golf, Hotel, India, Juliet, Kilo,
-      Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform,
-      Victor, Whiskey, X-ray, Yankee, Zulu
-    </div>
-  </div>
-  <div class="frame-7">
-    <div
-      class="scaling-test-alfa-bravo-charlie-delta-foxtrot-golf-hotel-india-juliet-kilo-lima-mike-november-oscar-papa-quebec-romeo-sierra-tango-uniform-victor-whiskey-x-ray-yankee-zulu"
-    >
-      Scaling-test:
-      <br />
-      Alfa, Bravo, Charlie, Delta, Foxtrot, Golf, Hotel, India, Juliet, Kilo,
-      Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform,
-      Victor, Whiskey, X-ray, Yankee, Zulu
-    </div>
-  </div>
-  <div class="v-re-mest-popul-re-kategorier">Våre mest populære kategorier</div>
-  <div class="frame-4">
-    <div
-      class="scaling-test-alfa-bravo-charlie-delta-foxtrot-golf-hotel-india-juliet-kilo-lima-mike-november-oscar-papa-quebec-romeo-sierra-tango-uniform-victor-whiskey-x-ray-yankee-zulu"
-    >
-      Scaling-test:
-      <br />
-      Alfa, Bravo, Charlie, Delta, Foxtrot, Golf, Hotel, India, Juliet, Kilo,
-      Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform,
-      Victor, Whiskey, X-ray, Yankee, Zulu
-    </div>
-  </div>
-  <div class="frame-8">
-    <div
-      class="scaling-test-alfa-bravo-charlie-delta-foxtrot-golf-hotel-india-juliet-kilo-lima-mike-november-oscar-papa-quebec-romeo-sierra-tango-uniform-victor-whiskey-x-ray-yankee-zulu"
-    >
-      Scaling-test:
-      <br />
-      Alfa, Bravo, Charlie, Delta, Foxtrot, Golf, Hotel, India, Juliet, Kilo,
-      Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform,
-      Victor, Whiskey, X-ray, Yankee, Zulu
-    </div>
-  </div>
-  <div class="frame-9">
-    <div
-      class="scaling-test-alfa-bravo-charlie-delta-foxtrot-golf-hotel-india-juliet-kilo-lima-mike-november-oscar-papa-quebec-romeo-sierra-tango-uniform-victor-whiskey-x-ray-yankee-zulu"
-    >
-      Scaling-test:
-      <br />
-      Alfa, Bravo, Charlie, Delta, Foxtrot, Golf, Hotel, India, Juliet, Kilo,
-      Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform,
-      Victor, Whiskey, X-ray, Yankee, Zulu
-    </div>
-  </div>
-  <div class="frame-10">
-    <div
-      class="scaling-test-alfa-bravo-charlie-delta-foxtrot-golf-hotel-india-juliet-kilo-lima-mike-november-oscar-papa-quebec-romeo-sierra-tango-uniform-victor-whiskey-x-ray-yankee-zulu"
-    >
-      Scaling-test:
-      <br />
-      Alfa, Bravo, Charlie, Delta, Foxtrot, Golf, Hotel, India, Juliet, Kilo,
-      Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform,
-      Victor, Whiskey, X-ray, Yankee, Zulu
-    </div>
-  </div>
-  <div class="logo">LOGO</div>
-</div>
+    <script>
+        let toggleMenu = ()=>{
+            let x = document.getElementById("menu")
+            if(x.style.display === "flex"){
+                x.style.display = "none"
+            }else{
+                x.style.display = "flex"
+            }
+        }
+    </script>
+</body>
 </html>
