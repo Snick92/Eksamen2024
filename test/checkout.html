@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kasse - Nettbutikk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header, samme som i index.html -->
+  <header>
+    <nav>
+      <a href="index.html" class="logo">LOGO</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="product.html">Produkter</a></li>
+        <li><a href="#kategorier">Kategorier</a></li>
+        <li><a href="#kontakt">Kontakt oss</a></li>
+      </ul>
+      <div class="icons">
+        <a href="#">🔍</a>
+        <a href="checkout.html">🛒</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hovedinnhold for kasse/checkout -->
+  <main class="checkout">
+    <h1>Kassen</h1>
+
+    <!-- Handlekurvseksjon -->
+    <section class="shopping-bag">
+      <h2>Shoppingbag</h2>
+      <article class="cart-item">
+        <img src="https://picsum.photos/100" alt="Produktbilde">
+        <div class="item-details">
+          <h3>Produktnavn</h3>
+          <p>Størrelse: M</p>
+          <p>Pris: 499,-</p>
+        </div>
+      </article>
+      <!-- Flere produktkort kan legges til her -->
+    </section>
+
+    <!-- Personopplysninger -->
+    <section class="personal-info">
+      <h2>Dine opplysninger</h2>
+      <form>
+        <label for="firstName">Fornavn</label>
+        <input type="text" id="firstName" name="firstName" required>
+
+        <label for="lastName">Etternavn</label>
+        <input type="text" id="lastName" name="lastName" required>
+
+        <label for="address">Gateadresse</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="zipcode">Postnummer</label>
+        <input type="text" id="zipcode" name="zipcode" required>
+
+        <label for="city">Poststed</label>
+        <input type="text" id="city" name="city" required>
+      </form>
+    </section>
+
+    <!-- Leveringsalternativer -->
+    <section class="delivery-options">
+      <h2>Levering</h2>
+      <label><input type="radio" name="delivery" value="expressHome"> Ekspresslevering hjem</label>
+      <label><input type="radio" name="delivery" value="expressPickup"> Ekspress pakke til utleveringssted</label>
+      <label><input type="radio" name="delivery" value="standardHome" checked> Standard hjemlevering</label>
+    </section>
+
+    <!-- Betalingsseksjon -->
+    <section class="payment">
+      <h2>Betaling</h2>
+      <form>
+        <label for="cardNumber">Kortnummer</label>
+        <input type="text" id="cardNumber" name="cardNumber" required>
+
+        <label for="expiry">Utløpsdato</label>
+        <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+
+        <label for="cvc">CVC/CVV</label>
+        <input type="text" id="cvc" name="cvc" required>
+
+        <div class="checkboxes">
+          <label><input type="checkbox" required> Ja, jeg godtar vilkårene</label>
+          <label><input type="checkbox"> Ja takk! Send nyhetsbrev til meg</label>
+        </div>
+        <button type="submit" class="button">Fullfør kjøp</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Samme footer som i index.html -->
+  </footer>
+</body>
+</html>
