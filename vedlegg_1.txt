@@ -8,3 +8,14 @@ Testoppdatering av GitHub..
       Alfa, Bravo, Charlie, Delta, Foxtrot, Golf, Hotel, India, Juliet, Kilo,
       Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform,
       Victor, Whiskey, X-ray, Yankee, Zulu
+
+Mitt ambisjonsnivå er karakteren B. Jeg er ganske trygg på min forståelse av hva som må til for å
+oppnå dette, og håper samtidig gjennomføringsevnen strekker til.
+
+Jeg antar 'breakpoints' kan bli litt vanskelig og at jeg må bruke ekstra tid på dette da jeg synes
+det kan være teknisk utfordrende å få til.
+
+Lærte et morsomt triks på Youtube (Kevin Powell, link) der man kan bruke border-image med fill for å gjøre teksten mer lesbar på f.eks. banneret sitt eller
+bilder. Jeg valgte en overgang fra rødt til gult med en gjennomsiktighetsverdi på 0.3%.
+
+Har startet om igjen over ti ganger. Fant ut etterhvert at jeg ville bruke flex-box ettersom jeg ble tryggere på det.
