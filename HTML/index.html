@@ -6,96 +6,102 @@
     <title>Responsiv Nettside</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/ikoner/css/solid.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <form>
-                <input type="text" placeholder="Søk her" class="search-bar">
-            </form>
-            <ul>
-                <li><a href="#">Hjem</a></li>
-                <li><a href="#">Produkter</a></li>
-                <li><a href="#">Logo</a></li>
-                <li><a href="#kategorier">Kategorier</a></li>
-                <li><a href="#kontakt">Kontakt oss</a></li>
-            </ul>
-            <ul class="icons">
-                <li><a href="#">👤</a></li>
-                <li><a href="#">❤️</a></li>
-                <li><a href="#">🛒</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="banner">
-            <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
-            <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
-            <a href="#" class="button">Les mer</a>
-        </section>
+    <div id="main-grid">
+        <header>
+            <nav>
+                <form>
+                    <label>
+                        <input type="search" placeholder="Søk her" class="search-bar">
+                        <button aria-label="Søk">🔍</button>
+                    </label>
+                </form>
+                <ul>
+                    <li><a href="#">Hjem</a></li>
+                    <li><a href="#">Produkter</a></li>
+                    <li><a href="#">Logo</a></li>
+                    <li><a href="#kategorier">Kategorier</a></li>
+                    <li><a href="#kontakt">Kontakt oss</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="#">👤</a></li>
+                    <li><a href="#">❤️</a></li>
+                    <li><a href="#">🛒</a></li>
+                </ul>
+            </nav>
+            <nav class="hamburger" aria-label="Åpne meny">☰</nav>
+        </header>
+        <main>
+            <section class="banner">
+                <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                <a href="#" class="button">Les mer</a>
+            </section>
 
-        <section class="produkter">
-            <h2>Våre mest populære produkter</h2>
-            <p>Oppdag det beste av det beste</p>
+            <section class="produkter">
+                <h2>Våre mest populære produkter</h2>
+                <p>Oppdag det beste av det beste</p>
+                <div>
+                    <button>New Product</button>
+                    <button>Special Price</button>
+                    <button>Best Sellers</button>
+                </div>
+                <ul class="grid">
+                    <li><img src="https://picsum.photos/300/200" alt=""><h3>Product name</h3><p>Kr 1999</p><span>⭐⭐⭐⭐☆ 842 Reviews</span></li>
+                    <li><img src="https://picsum.photos/300/200" alt=""><h3>Product name</h3><p>Kr 1999</p><span>⭐⭐⭐⭐☆ 842 Reviews</span></li>
+                    <li><img src="https://picsum.photos/300/200" alt=""><h3>Product name</h3><p>Kr 1999</p><span>⭐⭐⭐⭐☆ 842 Reviews</span></li>
+                    <li><img src="https://picsum.photos/300/200" alt=""><h3>Product name</h3><p>Kr 1999</p><span>⭐⭐⭐⭐☆ 842 Reviews</span></li>
+                </ul>
+            </section>
+
+            <section id="kategorier">
+                <h2>Våre mest populære kategorier</h2>
+                <p>Oppdag det beste av det beste</p>
+                <ul class="grid">
+                    <li><img src="https://picsum.photos/400" alt="Kategori 1"><h3>Category 1</h3></li>
+                    <li><img src="https://picsum.photos/400" alt="Kategori 2"><h3>Category 2</h3></li>
+                    <li><img src="https://picsum.photos/400" alt="Kategori 3"><h3>Category 3</h3></li>
+                    <li><img src="https://picsum.photos/400" alt="Kategori 4"><h3>Category 4</h3></li>
+                </ul>
+            </section>
+
+            <section class="anmeldelser">
+                <h2>Anmeldelser</h2>
+                <ul class="grid">
+                    <li><img src="https://picsum.photos/100" alt="Anmelder bilde"><h3>Rober Labrador</h3><span>⭐⭐⭐⭐☆</span><p>Lorem ipsum dolor sit amet...</p></li>
+                    <li><img src="https://picsum.photos/100" alt="Anmelder bilde"><h3>Rober Labrador</h3><span>⭐⭐⭐⭐☆</span><p>Lorem ipsum dolor sit amet...</p></li>
+                    <li><img src="https://picsum.photos/100" alt="Anmelder bilde"><h3>Rober Labrador</h3><span>⭐⭐⭐⭐☆</span><p>Lorem ipsum dolor sit amet...</p></li>
+                </ul>
+            </section>
+        </main>
+        <footer id="kontakt">
             <div>
-                <button>New Product</button>
-                <button>Special Price</button>
-                <button>Best Sellers</button>
+                <section>
+                    <h3>Kontakt</h3>
+                    <p>Adresse: B R A Veien 4, 1757 Halden</p>
+                    <p>Telefon: 69 00 80 00</p>
+                    <p>E-post: halden@hiof.no</p>
+                </section>
+                <section>
+                    <h3>Snarveier</h3>
+                    <ul>
+                        <li>Produkter</li>
+                        <li>Kategorier</li>
+                        <li>Kontakt oss</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Sosiale medier</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </section>
             </div>
-            <ul class="grid">
-                <li><img src="https://picsum.photos/300/200" alt=""><h3>Product name</h3><p>Kr 1999</p><span>⭐⭐⭐⭐☆ 842 Reviews</span></li>
-                <li><img src="https://picsum.photos/300/200" alt=""><h3>Product name</h3><p>Kr 1999</p><span>⭐⭐⭐⭐☆ 842 Reviews</span></li>
-                <li><img src="https://picsum.photos/300/200" alt=""><h3>Product name</h3><p>Kr 1999</p><span>⭐⭐⭐⭐☆ 842 Reviews</span></li>
-                <li><img src="https://picsum.photos/300/200" alt=""><h3>Product name</h3><p>Kr 1999</p><span>⭐⭐⭐⭐☆ 842 Reviews</span></li>
-            </ul>
-        </section>
-
-        <section id="kategorier">
-            <h2>Våre mest populære kategorier</h2>
-            <p>Oppdag det beste av det beste</p>
-            <ul class="grid">
-                <li><img src="https://picsum.photos/400" alt="Kategori 1"><h3>Category 1</h3></li>
-                <li><img src="https://picsum.photos/400" alt="Kategori 2"><h3>Category 2</h3></li>
-                <li><img src="https://picsum.photos/400" alt="Kategori 3"><h3>Category 3</h3></li>
-                <li><img src="https://picsum.photos/400" alt="Kategori 4"><h3>Category 4</h3></li>
-            </ul>
-        </section>
-
-        <section class="anmeldelser">
-            <h2>Anmeldelser</h2>
-            <ul class="grid">
-                <li><img src="https://picsum.photos/100" alt="Anmelder bilde"><h3>Rober Labrador</h3><span>⭐⭐⭐⭐☆</span><p>Lorem ipsum dolor sit amet...</p></li>
-                <li><img src="https://picsum.photos/100" alt="Anmelder bilde"><h3>Rober Labrador</h3><span>⭐⭐⭐⭐☆</span><p>Lorem ipsum dolor sit amet...</p></li>
-                <li><img src="https://picsum.photos/100" alt="Anmelder bilde"><h3>Rober Labrador</h3><span>⭐⭐⭐⭐☆</span><p>Lorem ipsum dolor sit amet...</p></li>
-            </ul>
-        </section>
-    </main>
-
-    <footer id="kontakt">
-        <div>
-            <section>
-                <h3>Kontakt</h3>
-                <p>Adresse: B R A Veien 4, 1757 Halden</p>
-                <p>Telefon: 69 00 80 00</p>
-                <p>E-post: halden@hiof.no</p>
-            </section>
-            <section>
-                <h3>Snarveier</h3>
-                <ul>
-                    <li>Produkter</li>
-                    <li>Kategorier</li>
-                    <li>Kontakt oss</li>
-                </ul>
-            </section>
-            <section>
-                <h3>Sosiale medier</h3>
-                <ul>
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                    <li>Twitter</li>
-                </ul>
-            </section>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 </html>
