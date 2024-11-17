@@ -1,148 +1,112 @@
-/* Generell styling */
-* {
-  box-sizing: border-box;
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Header Styling */
-header {
+header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
-  background-color: #f0f0f0; /* Grå bakgrunn */
+  padding: 1rem;
+  background-color: #f5f5f5;
 }
 
-.nav-list {
-  display: flex;
-  gap: 1rem;
+.search-bar {
+  margin-right: 1rem;
+  background-image: ...?;
+}
 
-  margin: 0;
-  padding: 0;
+header ul {
+  display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-.nav-list li{
-  flex-grow: 1;
-  flex-shrink: 1;
-  }
-
-.icons {
-  display: flex;
-  gap: 1rem;
-}
-.logo{
-  border: 2px solid black;
-  border-radius: 25px;
-  padding: 15px 32px;
-  text-align: center;
+header ul li a {
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-/*Button*/
-.button{
-  border: 2px solid black;
-  border-radius: 25px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  padding: 0.5rem 1rem;
 }
 
-/* Gjør header responsiv */
-@media (max-width: 768px) {
-  .nav-list3 {
-    display: none; /* Skjul hovedmenyen på små skjermer */
-  }
-
-  /* Vis en hamburger-meny-knapp på små skjermer */
-  .hamburger-menu {
-    display: block;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-}
-
-@media (min-width: 769px) {
-  .hamburger-menu {
-    display: none; /* Skjul hamburger-menyen på større skjermer */
-  }
-}
-
-/* Banner Styling med overlay(bytt navn?/lage ny klasse?)*/
-.banner {
-  border-width: 0px;
-  border-style: solid;
-  border-image-source: linear-gradient(rgba(255, 255, 0, 0.3), rgba(255, 0, 0, 0.3));
-  border-image-slice: fill 1;
-  
-
-  position: relative;
-  background-image: url('https://picsum.photos/1200/400');
-  background-size: cover;
-  background-repeat: no-repeat;
-
-  place-content: center;
-
-  color: white;
-  padding: 4rem;
-  text-align: center;
-}
-
-/* Products Section */
-
-.products-grid, .categories-grid, .reviews-grid {
+/* Grid for sections */
+.grid {
   display: grid;
   gap: 1rem;
-}
-.product-card {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  align-content: flex-start;
-  width: 100%;
-  height: auto;
-  background-color: #ffffff;
-  overflow: auto;
-  flex-direction: row;
-}
-
-.FlexContainer div {
-  width: 200px;
-  height: 200px;
-  margin: 5px;
-  background-color: lightblue;
-}
-/* Responsiv grid */
-.products-grid, .categories-grid {
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
-.reviews-grid {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.banner{
+  background-image: url(https://picsum.photos/2048/300?blur=5);
+}
+
+.banner, .produkter, .kategorier, .anmeldelser {
+  text-align: center;
+  padding: 2rem;
+}
+
+footer div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  background-color: #f5f5f5;
+  padding: 2rem;
+}
+
+/* Styling for produktkort */
+.grid li {
+  list-style: none;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtil skygge */
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid li img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem; /* Spacing under bildet */
+}
+
+.grid li h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.grid li p {
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+.grid li span {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Hover-effekt */
+.grid li:hover {
+  transform: translateY(-5px); /* Løft opp litt ved hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Forsterket skygge */
+}
+
+/* Grid spacing */
+.grid {
+  gap: 2rem; /* Spacing mellom produktkortene */
+}
+
+
+/* Breakpoints */
+@media (max-width: 768px) {
+  header nav {
+      flex-wrap: wrap;
+  }
+  .search-bar {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
 }
