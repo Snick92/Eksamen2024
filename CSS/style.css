@@ -1,140 +1,295 @@
-*{
-  font-family: 'Roboto', sans-serif;
+/* Reset og grunnleggende styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
 }
 
-.flex-space-b{
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
+header {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f8f9fa;
 }
 
 .nav-bar {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  gap: 2rem;
-  background-color: #f5f5f5;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-
-  .nav-links{
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  .nav-icons{
-    gap: 1rem;
-  }
-  .logo{
-    font-size: 24px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 25px;
-  }
+  justify-content: space-between;
+  width: 100%;
 }
 
-
-
-header ul {
+.nav-bar ul {
   display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-header ul li a {
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
-/* Grid for sections */
-.grid {
-  display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.nav-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.hamburger {
+  display: none;
 }
 
 .global-banner{
   display: flex;
-  flex-wrap: wrap;
-  flex-shrink: 1;
-  flex-grow: 1;
-  flex-direction: column;
+  
   justify-content: center;
-  background-image: url(https://picsum.photos/400/400);
-  border: 1px solid rgb(0, 0, 0);
-  text-align: end;
-  padding: 2rem;
-  background-size: cover;
 
-  .button{
-    background-color: rgba(255, 255, 255, 0.504);
-    border-radius: 25px;
-    padding: 0.5rem;
-    border: 1px solid rgb(0, 0, 0);
+  flex-direction: column;
+  margin-right: 1rem;
+  padding: 2rem;
+  
+  width: 100%;
+  object-fit: cover;
+  background-image: url(../bilder/beach_small.jpg);
+  background-size: auto;
+}
+
+.global-banner-content{
+  text-align: center;
+  color:rgb(0, 0, 0);
+
+  max-width: 250px;
+  place-self: end;
+  background-color: rgba(108, 207, 216, 0.132);
+  backdrop-filter: blur(6px);
+  
+  border-style: solid;
+  border-color: rgb(0, 0, 0) rgba(255, 255, 0, 0);
+  border-radius: 20px;
+  border-width: 2px;
+}
+
+.button_1{
+  display: inline-flex;
+  justify-content: center;
+  
+  margin: 0.5rem;
+  padding: 0.1rem;
+  background-color: rgb(255, 255, 255);
+
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+
+  box-shadow: 1px 1px 2px rgb(0, 0, 0);
+  border-radius: 8px;
+  border-width: 1px;
+}
+
+
+.product-cards ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  list-style: none;
+}
+
+.product-cards ul li, 
+.category-cards ul li, 
+.anmeldelser ul li {
+  text-align: center;
+  max-width: 300px;
+}
+
+
+
+footer {
+  padding: 1rem;
+  background: #212529;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer section ul {
+  list-style: none;
+}
+
+/* --- Media Queries --- */
+
+
+
+/* Nettbrett (651x til 1024px) */
+@media (min-width: 640px) and (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  header {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .nav-bar ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 0.5rem;
+  }
+
+  .global-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+
+    flex-direction: column;
+    padding: 2rem;
+    
+    width: 100%;
+    height: 300px;
+    background-image: url(../bilder/beach_medium.jpg);
+    background-size: auto;
+    background-position: center;
+  }
+  
+  .global-banner-content{
+    text-align: center;
+    color:rgb(0, 0, 0);
+
+    max-width: 250px;
+    place-self: end;
+    background-color: rgba(108, 207, 216, 0.132);
+    backdrop-filter: blur(6px);
+    
+    border-style: solid;
+    border-color: rgb(0, 0, 0) rgba(255, 255, 0, 0);
+    border-radius: 20px;
+    border-width: 2px;
+  }
+
+  .button_1{
+    display: inline-flex;
+    justify-content: center;
+    
+    margin: 0.5rem;
+    padding: 0.1rem;
+    background-color: rgb(255, 255, 255);
+
     color: rgb(0, 0, 0);
     text-decoration: none;
-    font-size: 15px;
+
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    border-radius: 8px;
+    border-width: 1px;
+  }
+
+  .product-cards ul li{
+      max-width: 45%;
   }
 }
 
+/* Desktop (over 1024px) */
+@media (min-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
+  .nav-bar ul {
+      display: flex;
+  }
 
-footer div {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  background-color: rgb(255, 255, 255);
-  padding: 2rem;
-}
+  .hamburger {
+      display: none;
+  }
 
-/* Styling for produktkort */
-.grid li {
-  list-style: none;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtil skygge */
-  padding: 1rem;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.grid li img {
-  border-radius: 8px;
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 1rem; /* Spacing under bildet */
-}
-
-.grid li h3 {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-}
-
-.grid li p {
-  color: #333;
-  margin: 0.5rem 0;
-}
-
-.grid li span {
-  color: #777;
-  font-size: 0.9rem;
-}
-
-/* Hover-effekt */
-.grid li:hover {
-  transform: translateY(-5px); /* Løft opp litt ved hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Forsterket skygge */
-}
-
-/* Grid spacing */
-.grid {
-  gap: 2rem; /* Spacing mellom produktkortene */
-}
-
-
-/* Breakpoints */
-@media screen {
+  .global-banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
   
+    flex-direction: column;
+    margin-right: 1rem;
+    padding: 2rem;
+    
+    width: 100%;
+    height: 300px;
+    background-image: url(../bilder/beach_large.jpg);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+
+  }
+  
+  .global-banner-content{
+    text-align: center;
+    color:rgb(0, 0, 0);
+
+    max-width: 250px;
+    place-self: end;
+    background-color: rgba(108, 207, 216, 0.132);
+    backdrop-filter: blur(6px);
+    
+    border-style: solid;
+    border-color: rgb(0, 0, 0) rgba(255, 255, 0, 0);
+    border-radius: 20px;
+    border-width: 2px;
+  }
+
+  .button_1{
+    display: inline-flex;
+    justify-content: center;
+    
+    margin: 0.5rem;
+    padding: 0.1rem;
+    background-color: rgb(255, 255, 255);
+
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+    box-shadow: 1px 1px 2px rgb(0, 0, 0);
+    border-radius: 8px;
+    border-width: 1px;
+  }
+
+
+  .product-cards ul{
+      gap: 2rem;
+  }
+
+  .product-cards ul li{
+      max-width: 22%;
+  }
+
+  .footer-content {
+      justify-content: space-between;
+      text-align: left;
+  }
+}
+
+@media (min-width: 1990){
+  .global-banner-content{
+    text-align: center;
+    color:rgb(0, 0, 0);
+
+    max-width: 250px;
+    place-self: end;
+    background-color: rgb(255, 255, 255);
+    
+    border-style: solid;
+    border-color: rgb(0, 0, 0) rgba(255, 255, 0, 0);
+    border-radius: 20px;
+    border-width: 2px;
+}
 }
