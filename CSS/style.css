@@ -17,7 +17,7 @@
   overflow-x: hidden;
 }
 
-* {
+body, html {
   font-size: 14px;
 }
 
@@ -95,7 +95,7 @@ footer section {
   display: none;
 }
 
-/*Logo*/
+/* Logo */
 nav ul img{
   align-items: center;
   flex-direction: column-reverse;
@@ -111,9 +111,6 @@ header nav ul li {
   border: 2px solid rgb(0, 255, 4);
 }
 
-.hamburger {
-  
-}
 
 .global-banner {
 
@@ -136,19 +133,19 @@ header nav ul li {
 
 
 .global-banner-content {
-  text-align: center;
+  margin-left: 75%;
   color:rgb(0, 0, 0);
   padding: 1rem;
 
   max-width: 250px;
-  place-self: center;
   background-color: rgba(108, 207, 216, 0.132);
   backdrop-filter: blur(6px);
   
   border-style: solid;
   border-color: rgb(0, 0, 0) rgba(255, 255, 0, 0);
   border-width: 2px;
-  border: 2px solid rgb(255, 0, 208);
+  border-radius: 8px;
+  justify-content: end;
 }
 
 .button_1 {
@@ -178,54 +175,38 @@ header nav ul li {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  
 }
-.product-card img, .category-card img, .review-cards img{
+
+.product-card img, .category-card img, .review-cards img {
   width: 100%;
   height: auto;
-  
 }
 
-.product-card{
-
+.product-card {
   border: 2px solid rgb(255, 0, 0);
 }
 
-.category-card{
-
+.category-card {
   border: 2px solid rgb(24, 159, 6);
 }
 
-.review-cards ul{
-
+.review-cards ul {
   border: 2px solid rgb(255, 123, 0);
 }
 
 
-
-/* Removed duplicate footer selector */
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-footer section ul {
-  list-style: none;
-}
-
-footer section ul {
-  list-style: none;
-  width: 100%;
-}
-
+/* BREAKPOINT PAD*/
 @media (min-width: 481px) and (max-width: 1079px) {
   .grid-container {
     grid-template-areas:
       "header"
       "banner"
-      "aside"
       "main"
       "footer";
     grid-template-columns: 1fr;
@@ -239,11 +220,14 @@ footer section ul {
   .global-banner {
     background-image: url("../bilder/beach_medium.jpg");
   }
-
+  
   * {
     font-size: 16px;
   }
 
+  aside{
+    display: none;
+  }
   .product-cards ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -302,6 +286,9 @@ footer section ul {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  .grid-container * {
     font-size: 18px;
   }
 
@@ -326,12 +313,9 @@ footer section ul {
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 50xp;
+    max-width: 50px;
     max-height: 50px;
   }
-  
-   
-  
   .nav-link {
     display: flex;
     align-items: center;
@@ -358,6 +342,32 @@ footer section ul {
   .product-cards ul li{
     max-width: 100%;
   }
+  .product-card, .category-card, .review-cards li {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .product-card img, .category-card img, .review-cards img{
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  footer section ul {
+    list-style: none;
+  }
+
+  footer section ul {
+    list-style: none;
+    width: 100%;
+  }
+
+
 
 
 }
@@ -380,10 +390,7 @@ header nav ul {
   flex-wrap: wrap;
 }
 
-.global-banner-content {
-  width: 100%;
-  max-width: 100%;
-}
+
 
 .product-card, .category-card, .review-cards li {
   width: 100%;
@@ -391,7 +398,3 @@ header nav ul {
 }
 
 /* Force all elements to respect container width */
-* {
-  max-width: 100%;
-  box-sizing: border-box;
-}
