@@ -178,12 +178,14 @@ header nav ul li {
 }
 
 .product-card img, .category-card img, .review-cards img {
-  width: 100%;
+  width: 35%;
   height: auto;
+  border: 1px solid rgb(0, 0, 0);;
 }
 
 .product-card {
   border: 2px solid rgb(255, 0, 0);
+  padding: 1rem;
 }
 
 .category-card {
@@ -195,14 +197,13 @@ header nav ul li {
 }
 
 
-
 .footer-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* BREAKPOINT PAD*/
-@media (min-width: 481px) and (max-width: 1079px) {
+/* BREAKPOINT PAD */
+@media (min-width: 700px) and (max-width: 1079px) {
   .grid-container {
     grid-template-areas:
       "header"
