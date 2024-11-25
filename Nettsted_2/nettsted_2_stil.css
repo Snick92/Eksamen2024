@@ -1,26 +1,84 @@
-.grid-container{
-    display: grid;
-    grid-template-areas: 
-        "header" 
-        "main" 
-        "aside"
-        "footer";
-}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
 
+}
+body{
+    margin:0;
+    padding: 0;
+}
 header{
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
     padding: 1rem;
     background-color: #333;
+    width: 100%;
+    height: auto;
+    background-size: cover;
     color: #fff;
 
     ul{
         list-style: none;
     }
     .nav-link a{
-        padding: 0.5rem;
+        text-decoration: none;
+        color: #fff;
+        list-style: none;
+    }
+}
+#user-button a, #heart-button a, #shopping-cart-button a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+.all-nav-links{
+    line-height: 1.5;
+}
+.search-bar{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+    input{
+        color:#333;
+        padding: 0rem;
+        margin: 0rem;
+        width: 100%;
+    }
+    #magnifying-glass{
+        padding: 0rem;
+       
+        
+    }
+    #hamburger{
+        color:#fff;
+    }
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 2rem;
+    background-color: #333;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    color:#fff;
+
+    li{
+        list-style: none;
+        line-height: 1.5;
+        
+
+    }
+    li a{
+        flex-direction: row;
+        justify-content: flex-start;
         text-decoration: none;
         color: #fff;
         list-style: none;
