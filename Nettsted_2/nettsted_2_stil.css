@@ -176,7 +176,12 @@ main{
     background-color:rgb(245, 245, 245);
     box-shadow:#848484 3px 3px 3px;
     border-radius: 0.5rem;
-
+    .price{
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+        color: #000000;
+        font-weight: bold;
+    }
 }
 .product-card img{
     width: 100%;
@@ -185,7 +190,7 @@ main{
     /* top left, top right, bottom right, bottom left */
     border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
-.product-card, #product-name{
+.product-card, h3{
     font-size: 1.5rem;
     color: #333;
     text-decoration: none;
@@ -199,6 +204,7 @@ main{
     color: #333;
     text-decoration: none;
 }
+
 #reviews{
     font-weight: bold;
 }
@@ -254,5 +260,5 @@ footer{
 }
 
 @media screen and (min-width: 730px){
-    
+
 }
