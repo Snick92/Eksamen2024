@@ -27,3 +27,12 @@ Image by <a href="https://pixabay.com/users/ba2design-17347071/?utm_source=link-
 
 iStock-beach-<size> credit:
 https://www.istockphoto.com/portfolio/AltugGalip?mediatype=photography
+
+Border-radius 
+https://www.w3schools.com/cssref/css3_pr_border-radius.php
+
+CSS hover:
+https://www.w3schools.com/cssref/sel_hover.php
+
+Grunnlag for 320px som start-bredde:
+https://www.w3.org/WAI/WCAG21/Understanding/reflow.html

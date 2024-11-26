@@ -181,6 +181,7 @@ button:hover{
     footer{
         grid-area: footer;
         display: flex;
+        
         background-color: var(--header-footer-color----);
         backdrop-filter: blur(10px);
     }

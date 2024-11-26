@@ -11,48 +11,131 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Nettsted_2/nettsted_2_stil.css">
 </head>
+<!-- Husk: Aria-labels, Microdata, Crawler(?), Rich results(?)-->
 <body>
-    <div class="flex-container">
+    <div class="grid-container">
         <header>
             <nav>
-                <section class="nav-section">
-                    <ul class="search-bar">
-                        <li><i id="hamburger" class="fa-solid fa-bars"></i></li>
-                        <li><input type="search" placeholder="Search here"></li>
-                        <li><i id="magnifying-glass" class="fa-solid fa-magnifying-glass"></i></li>
-                        <li><i id="clear-search-button" class="fa-solid fa-x"></i></li>
-                    </ul>
+                <section action="" class="nav-section">
+                    <form class="search-bar-and-button">
+                        <input type="search" placeholder="Search here">
+                        <button id="submit" type="submit"><i class="fa-solid fa-search"></i></button>
+                    </form>
+                        <a><i id="hamburger" class="fa-solid fa-bars"></i></a>
                 </section>
+                
                 <ul class="all-nav-links">
                     <li class="nav-link"><a href="#">Home</a></li>
                     <li class="nav-link"><a href="#">Products</a></li>
-                    <li class="logo"><h1>Logo</h1></li>
+                    <li class="nav-logo"><a href="#">Logo</a></li>
                     <li class="nav-link"><a href="#">Categories</a></li>
                     <li class="nav-link"><a href="#">Contact</a></li>
                 </ul>
-                <ul class="header-buttons">
-                        <i id="user-button"><a href="#" class="fa-regular fa-user"></a></i>
-                        <i id="heart-button"><a href="#" class="fa-regular fa-heart"></a></i>
-                        <i id="shopping-cart-button"><a href="#" class="fa-solid fa-cart-shopping"></a></i>
+                <ul class="user-action-buttons">
+                    <a href="#" id="user-button"><i class="fa-regular fa-user"></i></a>
+                    <a href="#" id="heart-button"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#" id="cart-button"><i class="fa-solid fa-cart-shopping"></i></a>
                 </ul>
             </nav>
         </header>
         <main>
-            <section>
-                <h1>Welcome!</h1>
+            <section class="banner">
+                <h1>Welcome! (BANNER)</h1>
                 <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum possimus mollitia 
-                    explicabo odio qui quibusdam animi blanditiis corrupti aliquid, saepe laboriosam 
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Rerum possimus mollitia 
+                    explicabo odio qui quibusdam animi blanditiis corrupti aliquid,<br> saepe laboriosam 
                     ducimus nisi fugit dolorum rem eaque suscipit pariatur sequi.
                 </p>
                 <button id="try-now">Try now</button>
                 <button id="explore">Explore</button>
             </section>
+            <section class="product-card-container">
+                <article class="product-card">
+                    <img src="https://picsum.photos/300/300" alt="produkt">
+                    <link href="#"><h3 id="product-name">Product name</h3></link>
+                    <p id="product-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!</p>
+                    <p id="price">1999 kr</p>
+                    <li class="product-card-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </li>
+                    <p id="reviews">842 Reviews</p>
+                </article>
+                <article class="product-card">
+                    <img src="https://picsum.photos/300/300" alt="produkt">
+                    <link href="#"><h3 id="product-name">Product name</h3></link>
+                    <p id="product-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!</p>
+                    <p id="price">1999 kr</p>
+                    <li class="product-card-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </li>
+                    <p id="reviews">842 Reviews</p>
+                </article>                <article class="product-card">
+                    <img src="https://picsum.photos/300/300" alt="produkt">
+                    <link href="#"><h3 id="product-name">Product name</h3></link>
+                    <p id="product-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!</p>
+                    <p id="price">1999 kr</p>
+                    <li class="product-card-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </li>
+                    <p id="reviews">842 Reviews</p>
+                </article>                <article class="product-card">
+                    <img src="https://picsum.photos/300/300" alt="produkt">
+                    <link href="#"><h3 id="product-name">Product name</h3></link>
+                    <p id="product-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!</p>
+                    <p id="price">1999 kr</p>
+                    <li class="product-card-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </li>
+                    <p id="reviews">842 Reviews</p>
+                </article>                <article class="product-card">
+                    <img src="https://picsum.photos/300/300" alt="produkt">
+                    <link href="#"><h3 id="product-name">Product name</h3></link>
+                    <p id="product-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!</p>
+                    <p id="price">1999 kr</p>
+                    <li class="product-card-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </li>
+                    <p id="reviews">842 Reviews</p>
+                </article>                <article class="product-card">
+                    <img src="https://picsum.photos/300/300" alt="produkt">
+                    <link href="#"><h3 id="product-name">Product name</h3></link>
+                    <p id="product-card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!</p>
+                    <p id="price">1999 kr</p>
+                    <li class="product-card-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </li>
+                    <p id="reviews">842 Reviews</p>
+                </article>
+            </section>
         </main>
         <aside>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perspiciatis nulla 
-                cumque distinctio nostrum unde ipsa officiis voluptatum quis possimus ipsum, sequi.
+                cumque distinctio nostrum unde ipsa officiis voluptatum quis possimus ipsum, sequi.</p>
         </aside>
         <footer>
             <section>
@@ -64,19 +147,19 @@
             </section>
             <section>
                 <h3>Snarveier</h3>
-              
+                <ul>
                     <li><a href="#">Produkter</a></li>
                     <li><a href="#">Kategorier</a></li>
                     <li><a href="#">Kontakt oss</a></li>
-                
+                </ul>
             </section>
             <section>
                 <h3>Sosiale medier</h3>
-               
+                <ul>
                     <li><a href="#">Facebook</a></li>
                     <li><a href="#">Instagram</a></li>
                     <li><a href="#">Twitter</a></li>
-               
+                </ul>
             </section>
         </footer>
     </div>
