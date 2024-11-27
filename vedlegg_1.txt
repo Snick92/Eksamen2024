@@ -28,6 +28,10 @@ Image by <a href="https://pixabay.com/users/ba2design-17347071/?utm_source=link-
 iStock-beach-<size> credit:
 https://www.istockphoto.com/portfolio/AltugGalip?mediatype=photography
 
+beach-background-1280 credit:
+Image by <a href="https://pixabay.com/users/laurette57-1067505/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=884114">Laurette57</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=884114">Pixabay</a>
+
+
 Border-radius 
 https://www.w3schools.com/cssref/css3_pr_border-radius.php
 

@@ -11,153 +11,147 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body>
-    <div class="grid-container">
-        <header>
-            <nav>
-                <form class="search-bar">
-                    <input type="search" placeholder="Søk her">
-                    <button id="lupe" aria-label="Søk">🔍</button>
-                </form>
-            </nav>
-            <nav>
+<body class="grid-container">
+    <header>
+        <nav>
+            <form class="search-bar">
+                <input type="search" placeholder="Søk her">
+                <button id="lupe" aria-label="Søk">🔍</button>
+            </form>
+        </nav>
+        <nav>
+            <ul>
+                <li class="nav-link"><a href="index.html">Hjem</a></li>
+                <li class="nav-link"><a href="product.html">Produkter</a></li>
+                <li>
+                    <h1>Logo</h1>
+                </li>
+                <li class="nav-link"><a href="#kategorier">Kategorier</a></li>
+                <li class="nav-link"><a href="#kontakt">Kontakt oss</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="nav-icons">
+                <li id="user"><a href="#" class="fa-regular fa-user"></a></li>
+                <li id="heart"><a href="#" class="fa-solid fa-heart"></a></li>
+                <li id="cart"><a href="#" class="fa-solid fa-shopping-cart"></a></li>
+            </ul>
+        </nav>
+        <nav>
+            <button class="hamburger" aria-label="Åpne meny">☰</button>
+        </nav>
+    </header>
+    <main>
+        <section class="global-banner">
+            <section class="global-banner-content">
+                <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
+                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
+                <a href="#" class="button_1">Les mer</a>
+            </section>
+        </section>
+        <section class="product-cards">
+            <h2>Våre mest populære produkter</h2>
+            <article class="product-card">
+                <img src="https://picsum.photos/300/300" alt="produkt">
+                <a href="#"><h3>Product name</h3></a>
+                <a href="#">Lorem ipsum</a>
+                <p>1999 kr</p>
+                <span>⭐⭐⭐⭐☆ 842 Reviews</span>
+            </article>
+            <article class="product-card">
+                <img src="https://picsum.photos/300/300" alt="produkt">
+                <a href="#"><h3>Product name</h3></a>
+                <a href="#">Lorem ipsum</a>
+                <p>1999 kr</p>
+                <span>⭐⭐⭐⭐☆ 842 Reviews</span>
+            </article>
+            <article class="product-card">
+                <img src="https://picsum.photos/300/300" alt="produkt">
+                <a href="#"><h3>Product name</h3></a>
+                <a href="#">Lorem ipsum</a>
+                <p>1999 kr</p>
+                <span>⭐⭐⭐⭐☆ 842 Reviews</span>
+            </article>
+            <article class="product-card">
+                <img src="https://picsum.photos/300/300" alt="produkt">
+                <a href="#"><h3>Product name</h3></a>
+                <a href="#">Lorem ipsum</a>
+                <p>1999 kr</p>
+                <span>⭐⭐⭐⭐☆ 842 Reviews</span>
+            </article>
+            <article class="product-card">
+                <img src="https://picsum.photos/300/300" alt="produkt">
+                <a href="#"><h3>Product name</h3></a>
+                <a href="#">Lorem ipsum</a>
+                <p>1999 kr</p>
+                <span>⭐⭐⭐⭐☆ 842 Reviews</span>
+            </article>
+            <article class="product-card">
+                <img src="https://picsum.photos/300/300" alt="produkt">
+                <a href="#"><h3>Product name</h3></a>
+                <a href="#">Lorem ipsum</a>
+                <p>1999 kr</p>
+                <span>⭐⭐⭐⭐☆ 842 Reviews</span>
+            </article>
+        </section>
+                <a href="#"><h3>Category 2</h3></a>
+            <h2>Våre mest populære kategorier</h2>
+            <article class="category-card">
+                <img src="https://picsum.photos/200/200" alt="category 1">
+                <a href="#"><h3>Category 4</h3></a>
+                <a href="#">Lorem ipsum</a>
+            </article>
+            <article class="category-card">
+                <img src="https://picsum.photos/200/200" alt="category 2">
+                <a href="#"><h3>Category 1</h3></a>
+                <a href="#">Lorem ipsum</a>
+            </article>
+            <article class="category-card">
+                <img src="https://picsum.photos/200/200" alt="category 3">
+                <a href="#"><h3>Category 1</h3></a>
+                <a href="#">Lorem ipsum</a>
+            </article>
+            <article class="category-card">
+                <img src="https://picsum.photos/200/200" alt="category 4">
+                <a href="#"><h3>Category 1</h3></a>
+                <a href="#">Lorem ipsum</a>
+            </article>
+        </section>
+        <section class="review-cards">
+            <h2>Anmeldelser</h2>
+            <ul>
+                <li><img src="https://picsum.photos/100" alt="Anmelder bilde"><h3>Ola Nordmann</h3><span>⭐⭐⭐⭐☆</span><p>Lorem ipsum dolor sit amet...</p></li>
+                <li><img src="https://picsum.photos/100" alt="Anmelder bilde"><h3>Sven Svensson</h3><span>⭐⭐⭐⭐☆</span><p>Lorem ipsum dolor sit amet...</p></li>
+                <li><img src="https://picsum.photos/100" alt="Anmelder bilde"><h3>John Doe</h3><span>⭐⭐⭐⭐☆</span><p>Lorem ipsum dolor sit amet...</p></li>
+            </ul>
+        </section>
+    </main>
+    <aside>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perspiciatis nulla cumque distinctio nostrum unde ipsa officiis voluptatum quis possimus ipsum, sequi similique repudiandae laborum natus soluta qui rerum inventore.</p>
+    </aside>
+    <footer id="kontakt">
+            <section>
+                <h3>Kontakt</h3>
+                <p>Adresse: B R A Veien 4, 1757 Halden</p>
+                <p>Telefon: 69 00 80 00</p>
+                <p>E-post: halden@hiof.no</p>
+            </section>
+            <section>
+                <h3>Snarveier</h3>
                 <ul>
-                    <li class="nav-link"><a href="index.html">Hjem</a></li>
-                    <li class="nav-link"><a href="product.html">Produkter</a></li>
-                    <li>
-                        <a href="index.html">
-                            <img src="../bilder/logo_palmer.png" alt="Logo">
-                        </a>
-                    </li>
-                    <li class="nav-link"><a href="#kategorier">Kategorier</a></li>
-                    <li class="nav-link"><a href="#kontakt">Kontakt oss</a></li>
+                    <li><a href="#">Produkter</a></li>
+                    <li><a href="#">Kategorier</a></li>
+                    <li><a href="#">Kontakt oss</a></li>
                 </ul>
-            </nav>
-            <nav>
-                <ul class="nav-icons">
-                    <li id="user"><a href="#" class="fa-regular fa-user"></a></li>
-                    <li id="heart"><a href="#" class="fa-solid fa-heart"></a></li>
-                    <li id="cart"><a href="#" class="fa-solid fa-shopping-cart"></a></li>
-                </ul>
-            </nav>
-            <nav>
-                <button class="hamburger" aria-label="Åpne meny">☰</button>
-            </nav>
-        </header>
-        <main>
-            <section class="global-banner">
-                <section class="global-banner-content">
-                    <h2>Et harum quidem rerum facilis est et expedita distinctio.</h2>
-                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
-                    <a href="#" class="button_1">Les mer</a>
-                </section>
             </section>
-            <section class="product-cards">
-                <h2>Våre mest populære produkter</h2>
-                <article class="product-card">
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <a href="#"><h3>Product name</h3></a>
-                    <a href="#">Lorem ipsum</a>
-                    <p>1999 kr</p>
-                    <span>⭐⭐⭐⭐☆ 842 Reviews</span>
-                </article>
-                <article class="product-card">
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <a href="#"><h3>Product name</h3></a>
-                    <a href="#">Lorem ipsum</a>
-                    <p>1999 kr</p>
-                    <span>⭐⭐⭐⭐☆ 842 Reviews</span>
-                </article>
-                <article class="product-card">
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <a href="#"><h3>Product name</h3></a>
-                    <a href="#">Lorem ipsum</a>
-                    <p>1999 kr</p>
-                    <span>⭐⭐⭐⭐☆ 842 Reviews</span>
-                </article>
-                <article class="product-card">
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <a href="#"><h3>Product name</h3></a>
-                    <a href="#">Lorem ipsum</a>
-                    <p>1999 kr</p>
-                    <span>⭐⭐⭐⭐☆ 842 Reviews</span>
-                </article>
-                <article class="product-card">
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <a href="#"><h3>Product name</h3></a>
-                    <a href="#">Lorem ipsum</a>
-                    <p>1999 kr</p>
-                    <span>⭐⭐⭐⭐☆ 842 Reviews</span>
-                </article>
-                <article class="product-card">
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <a href="#"><h3>Product name</h3></a>
-                    <a href="#">Lorem ipsum</a>
-                    <p>1999 kr</p>
-                    <span>⭐⭐⭐⭐☆ 842 Reviews</span>
-                </article>
-            </section>
-                    <a href="#"><h3>Category 2</h3></a>
-                <h2>Våre mest populære kategorier</h2>
-                <article class="category-card">
-                    <img src="https://picsum.photos/200/200" alt="category 1">
-                    <a href="#"><h3>Category 4</h3></a>
-                    <a href="#">Lorem ipsum</a>
-                </article>
-                <article class="category-card">
-                    <img src="https://picsum.photos/200/200" alt="category 2">
-                    <a href="#"><h3>Category 1</h3></a>
-                    <a href="#">Lorem ipsum</a>
-                </article>
-                <article class="category-card">
-                    <img src="https://picsum.photos/200/200" alt="category 3">
-                    <a href="#"><h3>Category 1</h3></a>
-                    <a href="#">Lorem ipsum</a>
-                </article>
-                <article class="category-card">
-                    <img src="https://picsum.photos/200/200" alt="category 4">
-                    <a href="#"><h3>Category 1</h3></a>
-                    <a href="#">Lorem ipsum</a>
-                </article>
-            </section>
-            <section class="review-cards">
-                <h2>Anmeldelser</h2>
+            <section>
+                <h3>Sosiale medier</h3>
                 <ul>
-                    <li><img src="https://picsum.photos/100" alt="Anmelder bilde"><h3>Ola Nordmann</h3><span>⭐⭐⭐⭐☆</span><p>Lorem ipsum dolor sit amet...</p></li>
-                    <li><img src="https://picsum.photos/100" alt="Anmelder bilde"><h3>Sven Svensson</h3><span>⭐⭐⭐⭐☆</span><p>Lorem ipsum dolor sit amet...</p></li>
-                    <li><img src="https://picsum.photos/100" alt="Anmelder bilde"><h3>John Doe</h3><span>⭐⭐⭐⭐☆</span><p>Lorem ipsum dolor sit amet...</p></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Twitter</a></li>
                 </ul>
             </section>
-        </main>
-        <aside>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima perspiciatis nulla cumque distinctio nostrum unde ipsa officiis voluptatum quis possimus ipsum, sequi similique repudiandae laborum natus soluta qui rerum inventore.</p>
-        </aside>
-        <footer id="kontakt">
-            <div class="footer-content">
-                <section>
-                    <h3>Kontakt</h3>
-                    <p>Adresse: B R A Veien 4, 1757 Halden</p>
-                    <p>Telefon: 69 00 80 00</p>
-                    <p>E-post: halden@hiof.no</p>
-                </section>
-                <section>
-                    <h3>Snarveier</h3>
-                    <ul>
-                        <li><a href="#">Produkter</a></li>
-                        <li><a href="#">Kategorier</a></li>
-                        <li><a href="#">Kontakt oss</a></li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Sosiale medier</h3>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                    </ul>
-                </section>
-            </div>
-        </footer>
-    </div>
+    </footer>
 </body>
 </html>
