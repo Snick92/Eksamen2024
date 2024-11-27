@@ -36,3 +36,6 @@ https://www.w3schools.com/cssref/sel_hover.php
 
 Grunnlag for 320px som start-bredde:
 https://www.w3.org/WAI/WCAG21/Understanding/reflow.html
+
+pseudo-klasser (hover etc.):
+https://www.w3schools.com/css/css_pseudo_classes.asp

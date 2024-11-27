@@ -1,163 +1,189 @@
+
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 
-:root{
+:root {
     --text-color--: #df927d;
     --text-color-blend--: #03055B;
     --back-up-color--: #E7FAF9;
-    --header-footer-color--:#03045b63;
+    --header-footer-color--: #03045b63;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-h1{
-    font-size: 32px;
+
+h1 {
+    font-size: 28px;
 }
 
-.grid-container{
+.grid-container {
     display: grid;
     grid-template-areas: 
         "header" 
         "main" 
-        "aside"
         "footer";
     gap: 1rem;
     width: 100%;
 }
-body{
+
+body {
     grid-area: main;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
-    width: 50%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     background: url("../bilder/iStock-beach-medium-flipped.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-header{
+
+header {
     grid-area: header;
     display: flex;
     flex-direction: column;
-    position: relative;
-    justify-content: space-between;
     align-items: center;
-    height: auto;
-    background-color: #03045b63;
+    background-color: var(--header-footer-color--);
     backdrop-filter: blur(10px);
-    align-items: center;
+    width: 100%;
+    padding: 1rem;
 }
-nav{
+
+nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
     width: 100%;
-    padding: 2rem 5rem 2rem 5rem;
-    justify-content: space-between;
+    padding: 1rem;
 }
-nav ul{
+
+nav ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 1rem;
 }
-.nav-link{
+
+.nav-link {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 }
-.logo{
+
+.logo {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 0.5rem;
 }
-.logo h1{
-    font-size: 27px;
+
+.logo h1 {
+    font-size: 22px;
     color: #fff;
     background-color: var(--text-color--);
     border-radius: 25px;
-    padding: 10px 15px;
+    padding: 8px 10px;
 }
-ul{
+
+ul {
     list-style: none;
     display: flex;
-    gap: 3rem;
+    flex-direction: column;
+    gap: 1rem;
     padding: 0;
 }
-li a{
+
+li a {
     color: #fff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     border-radius: 25px;
-    padding: 10px 15px;
+    padding: 8px 10px;
     transition: 0.6s;
 }
-li a:hover{
+
+li a:hover {
     background-color: var(--text-color--);
 }
 
-.system-button{
+.system-button {
     position: absolute;
-    top: 2rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1rem;
     color: black;
 }
 
-button{
+button {
     border: 2px solid var(--back-up-color--);
     background-color: transparent;
     border-radius: 5px;
-    padding: 10px 15px;
-    font-size: 18px;
+    padding: 8px 10px;
+    font-size: 14px;
     font-weight: 600;
     color: var(--back-up-color--);
     cursor: pointer;
     transition: 0.6s;
 }
-button:hover{
+
+button:hover {
     background-color: var(--back-up-color--);
     color: #000;
 }
 
 /* Hero Section */
 
-.home-component{
+.home-component {
     grid-area: main;
-    padding:2rem 5rem 2rem 5rem;
+    padding: 1rem;
     display: flex;
-    flex-direction: row;
-    flex-shrink: 1;
+    flex-direction: column;
     align-items: center;
-    height: auto;
-    justify-content: flex-end;
-    text-align: left;
+    text-align: center;
 }
-.home-container{
+
+.home-container {
     align-items: center;
-    width: 600px;
+    width: 90%;
 }
-.home-container h1{
-    color:#fff;
-    font-size: 5rem;
-    padding-bottom: 20px;
-}
-.home-container p{
+
+.home-container h1 {
     color: #fff;
-    font-size: 1.5rem;
-    padding-bottom: 40px;
+    font-size: 2rem;
+    padding-bottom: 1rem;
 }
-#explore{
-    margin-left: 20px;
+
+.home-container p {
+    color: #fff;
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
 }
+
+#explore {
+    margin-left: 0;
+}
+
+/* Footer Section */
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--header-footer-color--);
+    padding: 1rem;
+}
+    
+    
+
+
 @media (min-width: 992px){
     .grid-container{
         grid-template-columns: 1fr;
@@ -168,6 +194,176 @@ button:hover{
         "main" 
         "aside"
         "footer";
+    }
+    :root{
+        --text-color--: #df927d;
+        --text-color-blend--: #03055B;
+        --back-up-color--: #E7FAF9;
+        --header-footer-color--:#03045b63;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+    }
+    h1{
+        font-size: 32px;
+    }
+    
+    .grid-container{
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-areas: 
+            "header" 
+            "main" 
+            "aside"
+            "footer";
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    body{
+        grid-area: main;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        font-size: 20px;
+        line-height: 1.5;
+        width: 100%;
+        height: 100%;
+        background: url("../bilder/iStock-beach-medium-flipped.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    header{
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        background-color: #03045b63;
+        backdrop-filter: blur(10px);
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+        padding: 2rem 5rem 2rem 5rem;
+        justify-content: space-between;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+    .nav-link{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .logo h1{
+        font-size: 27px;
+        color: #fff;
+        background-color: var(--text-color--);
+        border-radius: 25px;
+        padding: 10px 15px;
+    }
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+        padding: 0;
+    }
+    li a{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 25px;
+        padding: 10px 15px;
+        transition: 0.6s;
+    }
+    li a:hover{
+        background-color: var(--text-color--);
+    }
+    
+    .system-button{
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        color: black;
+    }
+    
+    button{
+        border: 2px solid var(--back-up-color--);
+        background-color: transparent;
+        border-radius: 5px;
+        padding: 10px 15px;
+        font-size: 18px;
+        font-weight: 600;
+        color: var(--back-up-color--);
+        cursor: pointer;
+        transition: 0.6s;
+    }
+    button:hover{
+        background-color: var(--back-up-color--);
+        color: #000;
+    }
+    
+    /* Hero Section */
+    
+    .home-component{
+        grid-area: main;
+        padding:2rem 5rem 2rem 5rem;
+        display: flex;
+        flex-direction: row;
+        flex-shrink: 1;
+        align-items: center;
+        height: auto;
+        justify-content: flex-end;
+        text-align: left;
+    }
+    .home-container{
+        align-items: center;
+        width: 600px;
+    }
+    .home-container h1{
+        color:#fff;
+        font-size: 5rem;
+        padding-bottom: 20px;
+    }
+    .home-container p{
+        color: #fff;
+        font-size: 1.5rem;
+        padding-bottom: 40px;
+    }
+    #explore{
+        margin-left: 20px;
+    }
+    
+    /* Footer Section */
+    footer{
+        grid-area: footer;
+        display: flex;
+        flex-direction: row;
+        background-color: var(--header-footer-color----);
+        backdrop-filter: blur(10px);
     }
     header{
         grid-area: header;
@@ -181,7 +377,7 @@ button:hover{
     footer{
         grid-area: footer;
         display: flex;
-        
+        flex-direction: row;
         background-color: var(--header-footer-color----);
         backdrop-filter: blur(10px);
     }
