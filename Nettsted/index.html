@@ -9,17 +9,17 @@
     <link href="../ikoner/css/regular.css" rel="stylesheet">
     <link href="../ikoner/css/solid.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../Nettsted/nettsted_stil.css">
+    <link rel="stylesheet" href="../Nettsted/CSS/nettsted_stil.css">
+    <link rel="normalizeCSS" href="../Nettsted/CSS/normalize.css">
 </head>
 <body class="grid-container">
     <header>
-        <nav>
-            <section class="top-nav-section">
-                <form class="search-bar-and-button">
-                    <input type="search" placeholder="Search here">
-                    <button id="submit" type="submit"><i class="fa-solid fa-search"></i></button>
-                </form>
-            </section>
+        <nav class="global-nav">
+            <form class="search-bar-and-button">
+                <label for="search">Search</label>
+                <input type="search" placeholder="Search here" id="search">
+                <button href="index.html" id="submit" type="submit" value="Search"><i class="fa-solid fa-search"></i></button>
+            </form>
             <ul>
                 <li class="nav-link"><a href="index.html">Home</a></li>
                 <li class="nav-link"><a href="#">Products</a></li>
@@ -27,236 +27,98 @@
                 <li class="nav-link"><a href="#categories">Categories</a></li>
                 <li class="nav-link"><a href="#products">Contact</a></li>
             </ul>
-            <section class="system-button">
-                <ul class="user-action-buttons">
-                    <li><a href="#" id="user-button"><i class="fa-regular fa-user"></i></a></li>
-                    <li><a href="#" id="heart-button"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="#" id="cart-button"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                </ul>
-            </section>
+            <ul class="system-button">
+                <li><a href="#" id="user-button"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#" id="heart-button"><i class="fa-regular fa-heart"></i></a></li>
+                <li><a href="#" id="cart-button"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
         </nav>
     </header>
     <main class="home-component">
         <section class="banner">
-            <h1>Welcome!</h1>
-            <p>
-                Lorem, ipsum dolor sit amet <br>consectetur adipisicing elit.<br> Rerum possimus mollitia 
-                explicabo<br> odio qui quibusdam animi<br> blanditiis corrupti aliquid,<br> saepe laboriosam 
-                ducimus nisi fugit<br> dolorum rem eaque suscipit pariatur sequi.
-            </p>
-            <article class="banner-buttons">
-                <button class="banner-button">Try now</button>
-                <button class="banner-button">Explore</button>
-            </article>
+            <div class="banner-content">
+                <h2>Welcome!</h2>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum possimus mollitia 
+                    explicabo odio qui quibusdam animi blanditiis corrupti aliquid, saepe laboriosam 
+                    ducimus nisi fugit dolorum rem eaque suscipit pariatur sequi.
+                </p>
+                <nav class="banner-buttons">
+                    <button class="banner-button">Try now</button>
+                    <button class="banner-button">Explore</button>
+                </nav>
+            </div>
         </section>
-        <heading>
-            <h2 id="products">Våre mest populære produkter</h2>
-        </heading>
         <section class="flex-space-products">
+            <h3 id="products-h3">Våre mest populære produkter</h3>
             <article class="product-card">
-                <figure>
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <figcaption class="product-name">Produktnavn</figcaption>
-                    <p class="product-description">
-                        Dette er en kort beskrivelse av produktet.
-                    </p>
-                </figure>
-                <div class="product-card-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <span class="reviews">842 Reviews</span>
-                </div>
+                <img src="https://picsum.photos/300/300" alt="produkt">
+                <a href="#" class="product-name"><h4>Produktnavn</h4></a>
+                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum libero ipsam ea rerum architecto nam possimus adipisci dolore obcaecati harum, perferendis iusto ducimus, delectus voluptates! Quaerat tempora eveniet ea?</p>
+            <ul class="product-card-rating">
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-regular fa-star"></li>
+                <li class="reviews">842 Reviews</li>
+            </ul>
+                <p class="price">1999 kr</p>
+                <button a href="product.html" class="buy-button">Kjøp nå</button>
+            </article>
+            <article class="product-card">
+                <img src="https://picsum.photos/300/300" alt="produkt">
+                <a href="#"><h4>Produktnavn</h4></a>
+                <p class="product-description">Dette er en kort beskrivelse av produktet.</p>
+            <ul class="product-card-rating">
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-regular fa-star"></li>
+                <li class="reviews">842 Reviews</li>
+            </ul>
                 <p class="price">1999 kr</p>
                 <button class="buy-button">Kjøp nå</button>
             </article>
             <article class="product-card">
-                <figure>
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <figcaption class="product-name">Produktnavn</figcaption>
-                    <p class="product-description">
-                        Dette er en kort beskrivelse av produktet.
-                    </p>
-                </figure>
-                <div class="product-card-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <span class="reviews">842 Reviews</span>
-                </div>
+                <img src="https://picsum.photos/300/300" alt="produkt">
+                <a href="#"><h4>Produktnavn</h4></a>
+                <p class="product-description">Dette er en kort beskrivelse av produktet.</p>
+            <ul class="product-card-rating">
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-regular fa-star"></li>
+                <li class="reviews">842 Reviews</li>
+            </ul>
                 <p class="price">1999 kr</p>
                 <button class="buy-button">Kjøp nå</button>
             </article>
             <article class="product-card">
-                <figure>
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <figcaption class="product-name">Produktnavn</figcaption>
-                    <p class="product-description">
-                        Dette er en kort beskrivelse av produktet.
-                    </p>
-                </figure>
-                <div class="product-card-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <span class="reviews">842 Reviews</span>
-                </div>
-                <p class="price">1999 kr</p>
-                <button class="buy-button">Kjøp nå</button>
-            </article>
-            <article class="product-card">
-                <figure>
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <figcaption class="product-name">Produktnavn</figcaption>
-                    <p class="product-description">
-                        Dette er en kort beskrivelse av produktet.
-                    </p>
-                </figure>
-                <div class="product-card-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <span class="reviews">842 Reviews</span>
-                </div>
-                <p class="price">1999 kr</p>
-                <button class="buy-button">Kjøp nå</button>
-            </article>
-            <article class="product-card">
-                <figure>
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <figcaption class="product-name">Produktnavn</figcaption>
-                    <p class="product-description">
-                        Dette er en kort beskrivelse av produktet.
-                    </p>
-                </figure>
-                <div class="product-card-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <span class="reviews">842 Reviews</span>
-                </div>
-                <p class="price">1999 kr</p>
-                <button class="buy-button">Kjøp nå</button>
-            </article>
-            <article class="product-card">
-                <figure>
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <figcaption class="product-name">Produktnavn</figcaption>
-                    <p class="product-description">
-                        Dette er en kort beskrivelse av produktet.
-                    </p>
-                </figure>
-                <div class="product-card-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <span class="reviews">842 Reviews</span>
-                </div>
-                <p class="price">1999 kr</p>
-                <button class="buy-button">Kjøp nå</button>
-            </article>
-            <article class="product-card">
-                <figure>
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <figcaption class="product-name">Produktnavn</figcaption>
-                    <p class="product-description">
-                        Dette er en kort beskrivelse av produktet.
-                    </p>
-                </figure>
-                <div class="product-card-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <span class="reviews">842 Reviews</span>
-                </div>
-                <p class="price">1999 kr</p>
-                <button class="buy-button">Kjøp nå</button>
-            </article>
-            <article class="product-card">
-                <figure>
-                    <img src="https://picsum.photos/300/300" alt="produkt">
-                    <figcaption class="product-name">Produktnavn</figcaption>
-                    <p class="product-description">
-                        Dette er en kort beskrivelse av produktet.
-                    </p>
-                </figure>
-                <div class="product-card-rating">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                    <span class="reviews">842 Reviews</span>
-                </div>
+                <img src="https://picsum.photos/300/300" alt="produkt">
+                <a href="#"><h4>Produktnavn</h4></a>
+                <p class="product-description">Dette er en kort beskrivelse av produktet.</p>
+            <ul class="product-card-rating">
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-regular fa-star"></li>
+                <li class="reviews">842 Reviews</li>
+            </ul>
                 <p class="price">1999 kr</p>
                 <button class="buy-button">Kjøp nå</button>
             </article>
         </section>
-        <heading>
-            <h2 id="products">Våre mest populære kategorier</h2>
-        </heading>
         <section class="flex-space-categories">
+            <h3 id="categories-h3">Våre mest populære kategorier</h3>
             <article class="category-card">
-                <figure>
-                    <img src="https://picsum.photos/200/200" alt="Bildet viser en kategori">
-                    <figcaption>Lorem ipsum</figcaption>
-                </figure>
-                <section class="category-details">
-                    <p class="category-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!
-                    </p>
-                    <button class="category-button">Explore</button>
-                </section>
-            </article>
-            <article class="category-card">
-                <figure>
-                    <img src="https://picsum.photos/200/200" alt="Bildet viser en kategori">
-                    <figcaption>Lorem ipsum</figcaption>
-                </figure>
-                <section class="category-details">
-                    <p class="category-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!
-                    </p>
-                    <button class="category-button">Explore</button>
-                </section>
-            </article>
-            <article class="category-card">
-                <figure>
-                    <img src="https://picsum.photos/200/200" alt="Bildet viser en kategori">
-                    <figcaption>Lorem ipsum</figcaption>
-                </figure>
-                <section class="category-details">
-                    <p class="category-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!
-                    </p>
-                    <button class="category-button">Explore</button>
-                </section>
-            </article>
-            <article class="category-card">
-                <figure>
-                    <img src="https://picsum.photos/200/200" alt="Bildet viser en kategori">
-                    <figcaption>Lorem ipsum</figcaption>
-                </figure>
-                <section class="category-details">
-                    <p class="category-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!
-                    </p>
-                    <button class="category-button">Explore</button>
-                </section>
+                <img src="https://picsum.photos/200/200" alt="Bildet viser en kategori">
+                <h4>Kategori</h4>
+                <p class="category-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!</p>
+                <button class="category-button">Explore</button>
             </article>
         </section>
     </main>

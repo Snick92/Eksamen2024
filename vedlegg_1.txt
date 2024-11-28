@@ -12,8 +12,8 @@ Testoppdatering av GitHub..
 Mitt ambisjonsnivå er karakteren C Jeg er ganske trygg på min forståelse av hva som må til for å
 oppnå dette, og håper samtidig gjennomføringsevnen strekker til.
 
-Jeg antar 'breakpoints' kan bli litt vanskelig og at jeg må bruke ekstra tid på dette da jeg synes
-det kan være teknisk utfordrende å få til.
+Jeg ser for meg at 'breakpoints' kan bli litt vanskelig og at jeg må bruke ekstra tid på dette da jeg synes
+det kan være teknisk utfordrende å få til. 
 
 
 Fant ut etterhvert at jeg ville bruke grid ettersom jeg ble tryggere på det.

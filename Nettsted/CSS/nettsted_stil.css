@@ -3,7 +3,7 @@
 :root {
     --orange-custom: #df927d; /* Standard oransj for nettsiden */
     --white-custom: #E7FAF9; /* Standard hvit for nettsiden */
-    --header-footer-color: #03045b63; /* Farge for header og footer */
+    --header-footer-color: #002490; /* Farge for header og footer */
     --back-up-color: #fff; /* Standard farge for ikoner og tekst */
     --text-color: #df927d; /* Farge ved hover */
     --background-custom: #bbbbbb31; /* For søke-bar */
@@ -16,19 +16,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-}
 
-body {
-    width: 100%;
-    height: 100%;
-    background: url("../bilder/beach-background-1280.jpg") no-repeat center/cover;
 }
-
-h1 {
-    font-size: 28px;
-    color: var(--back-up-color);
-}
-
 .grid-container {
     display: grid;
     grid-template-areas: 
@@ -39,14 +28,24 @@ h1 {
     width: 100%;
 }
 
+body {
+    max-width: 1600px;
+      
+}
+
+h2 {
+    font-size: 28px;
+    color: var(--back-up-color);
+}
+
+
+
 header, footer {
     background-color: var(--header-footer-color);
     backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
+
 }
+
 
 nav ul li.logo {
     background-color: var(--orange-custom); 
@@ -58,7 +57,7 @@ nav ul li.logo {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-nav {
+.global-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -67,7 +66,7 @@ nav {
     padding: 1rem;
 }
 
-nav ul {
+.global-nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -76,7 +75,7 @@ nav ul {
     padding: 0;
 }
 
-ul li a {
+.global-nav ul li a {
     color: var(--back-up-color);
     font-size: 16px;
     font-weight: 600;
@@ -86,7 +85,7 @@ ul li a {
     transition: 0.6s;
 }
 
-ul li a:hover {
+.global-nav ul li a:hover {
     background-color: var(--orange-custom);
     transform: scale(1.1);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -132,12 +131,8 @@ button:hover {
     color: var(--white-custom);
 }
 
-.top-nav-section {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 1rem;
-}
+
+
 
 .search-bar-and-button {
     display: flex;
@@ -145,8 +140,8 @@ button:hover {
     flex-wrap: nowrap;
     background: var(--background-custom);
     border-radius: 1rem;
-
 }
+
 .search-bar-and-button input {
     width: 100%;
     outline: none;
@@ -177,7 +172,7 @@ button:hover {
 }
 
 label {
-    display: none;
+    visibility: hidden;
 }
 
 .flex-space-products {
@@ -189,13 +184,27 @@ label {
     padding: 1rem;
 }
 
+#products-h3, #categories-h3 {
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    border-top: #33333376 1px solid;
+    border-bottom: #33333376 1px solid;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 1rem;
+}
+
 .flex-space-categories {
+    grid-area: main;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex-direction: row;
     padding: 1rem;
 }
+
+
 
 .category-card {
     display: flex;
@@ -266,37 +275,50 @@ label {
     transform: scale(1.05);
 }
 
+
 .banner {
-    align-items: center;
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 2rem 5rem;
+    background: url("../bilder/beach-background-1280.jpg") no-repeat center/cover;
+    border-radius: 1rem;
 }
 
 .banner h1 {
-    color: var(--back-up-color);
-    font-size: 2rem;
-    padding-bottom: 1rem;
+    font-size: 3rem;
+    padding-bottom: 20px;
 }
 
 .banner p {
-    color: var(--back-up-color);
     font-size: 1rem;
-    padding-bottom: 1.5rem;
+    padding-bottom: 40px;
+    color:var(--white-custom);
 }
-
-.flex-space-products{
+.banner-buttons{
+    
+    padding: 1rem;
+}
+.banner-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-between;
-    gap: 1rem;
-}
+    flex-direction: column;
 
+    text-align: right;
+    background-color: var(--header-footer-color);
+    background-size: contain;
+    padding: 1rem;
+    
+}
 
 .product-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 300px; 
+    max-width: 100%; 
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -310,12 +332,6 @@ label {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-
-.product-card figure {
-    text-align: center;
-    margin: 0;
-}
-
 .product-card img {
     width: 100%;
     height: auto;
@@ -323,7 +339,8 @@ label {
     margin-bottom: 0.5rem;
 }
 
-.product-card .product-name {
+.product-name {
+    text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
@@ -331,11 +348,14 @@ label {
 }
 
 
-.product-card .product-description {
+.product-description {
+    display: flex;
+    flex-direction: column;
     font-size: 0.9rem;
     color: #666;
     margin: 0.5rem 0;
     text-align: center;
+    max-width: 200px;
 }
 
 
@@ -400,9 +420,8 @@ label {
     color: var(--back-up-color);
     text-decoration: none;
 }
-@media (min-width: 600px) {
-    
-}
+
+
 @media (min-width: 992px) {
     .grid-container {
         grid-template-areas: 
@@ -418,13 +437,13 @@ label {
         background: none;
     }
 
-    nav {
+    .global-nav {
         flex-direction: row;
         justify-content: space-between;
         padding: 2rem 5rem;
     }
 
-    nav ul {
+    .global-nav ul {
         flex-direction: row;
         gap: 3rem;
     }
@@ -437,36 +456,22 @@ label {
     }
 
     .banner {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: flex-end;
-        align-items: flex-end;
-        text-align: right;
-        padding: 2rem 5rem;
-        background: url("../bilder/iStock-beach-large-flipped.jpg") no-repeat center/cover;
-        border-radius: 1rem;
+        background: url("../bilder/iStock-beach-medium-flipped.jpg") no-repeat center/cover;
     }
-
     .banner h1 {
         font-size: 5rem;
-        padding-bottom: 20px;
     }
-
     .banner p {
         font-size: 1.5rem;
-        padding-bottom: 40px;
     }
-    .banner-buttons{
-        
-        padding: 1rem;
-    }
+    
+
     .category-card {
         flex-direction: row;
         align-items: flex-start;
         text-align: left;
         width: 100%; 
-        max-width: 600px; 
+        max-width: 500px; 
     }
 
     .category-card img {
@@ -476,5 +481,12 @@ label {
 
     .category-details {
         margin-top: 0;
+    }
+    .search-bar-and-button {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background: var(--background-custom);
+        border-radius: 1rem;
     }
 }
