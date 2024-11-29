@@ -1,0 +1,78 @@
+
+--- Ambisjonnivå og refleksjoner ---
+
+Mitt ambisjonsnivå var opprinnelig karakteren B men jeg har måttet nedjustere til C eller D.
+Jeg er ganske trygg på min forståelse av hva som må til for å oppnå dette, 
+men har brukt lang tid på å lage nettstedet da det var vanskelig å anslå tidsbruken som måtte til - gitt at dette er det første,
+større nettstedet jeg har laget. Oppgaveteksten var veldig lang og jeg mistet noe oversikt underveis, karakterambisjon sett til side er jeg mest redd for at jeg kommer til å få ikke bestått.
+
+Jeg så for meg at 'breakpoints' kunne bli litt vanskelig og at jeg må bruke ekstra tid på dette da jeg synes
+det kan være teknisk utfordrende å få til. Det viste seg at jeg ikke fikk det helt til med produktkortene, 
+ergo de store bildene (pixler). Bildene mine ble duplisert, og jeg forstod ikke helt hva som måtte til, men på sikt
+er jeg selvsikker på at jeg hadde funnet ut av det.
+
+Jeg tok utgangspunkt i 320px (iphone 5) som minste skjermstørrelse og jobbet meg oppover fra det.
+Jeg laget en grid i produktkortene for å oppnå standardisert utseende. Har prøvd flere ganger med flexbox - med ymse resultat.
+Grid i produktkortene fungerte med en gang, uten mye ekstra frem-og-tilbake-forsøk. Jeg antar produktkortene kunne blitt løst på 
+en smidigere måte, men fordi jeg følte at flexbox jobbet mot meg under hele prossessen landet jeg på å bruke grid i kortene.
+
+
+--- Bilder, credits ---
+
+
+Banner-bilde credit:
+Image by <a href="https://pixabay.com/users/pexels-2286921/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1836335">Pexels</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1836335">Pixabay</a>
+
+iStock-beach credit:
+https://www.istockphoto.com/portfolio/AltugGalip?mediatype=photography
+
+beach-background-1280 credit:
+Image by <a href="https://pixabay.com/users/laurette57-1067505/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=884114">Laurette57</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=884114">Pixabay</a>
+
+Yacht, credit:
+Image by <a href="https://pixabay.com/users/dimitrisvetsikas1969-1857980/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5489860">Dimitris Vetsikas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5489860">Pixabay</a>
+
+Royal-yacht credit:
+Image by <a href="https://pixabay.com/users/benkowski-12358782/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4446932">Bernard</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4446932">Pixabay</a>
+
+Wooden-boat credit:
+Image by <a href="https://pixabay.com/users/goranh-3989449/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4395843">Goran Horvat</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4395843">Pixabay</a>
+
+Motor-boat-race credit:
+Image by <a href="https://pixabay.com/users/emkanicepic-7638451/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5218168">Michael Kauer</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=5218168">Pixabay</a>
+
+fishing-boat credit:
+Image by <a href="https://pixabay.com/users/suedelbien-4933/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=49523">Kirsten Evers</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=49523">Pixabay</a>
+
+hangarskip credit:
+Image by <a href="https://pixabay.com/users/military_material-5427301/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2778527">Military_Material</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2778527">Pixabay</a>
+
+floaty credit:
+Image by <a href="https://pixabay.com/users/imaginethatstudio-38522820/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8646381">ImagineThatStudio</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=8646381">Pixabay</a>
+
+--- Kilder til teknisk hjelp og implementasjon ---
+
+
+Border-radius 
+https://www.w3schools.com/cssref/css3_pr_border-radius.php
+
+CSS hover, brukt på knapper:
+https://www.w3schools.com/cssref/sel_hover.php
+
+Grunnlag for 320px som start-bredde:
+https://www.w3.org/WAI/WCAG21/Understanding/reflow.html
+
+pseudo-klasser, brukt på hover og søkefelt:
+https://www.w3schools.com/css/css_pseudo_classes.asp
+
+sticky-element, brukt på aside:
+https://www.w3schools.com/howto/howto_css_sticky_element.asp
+
+::before og :last-child, brukt i brødsmulesti:
+https://www.w3schools.com/cssref/sel_last-child.php
+https://www.w3schools.com/cssref/sel_before.php
+
+transform og transitions, brukt i bla. annet knapper
+https://www.w3schools.com/cssref/css3_pr_transform.php
+https://www.w3schools.com/css/css3_transitions.asp
+
