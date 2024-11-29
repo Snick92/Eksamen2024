@@ -15,8 +15,9 @@ oppnå dette, og håper samtidig gjennomføringsevnen strekker til.
 Jeg ser for meg at 'breakpoints' kan bli litt vanskelig og at jeg må bruke ekstra tid på dette da jeg synes
 det kan være teknisk utfordrende å få til. 
 
-
-Fant ut etterhvert at jeg ville bruke grid ettersom jeg ble tryggere på det.
+Jeg tok utgangspunkt i 320px som minste skjermstørrelse. Jobbet meg oppover fra det.
+Laget grid i produktkortene for å oppnå standardisert utseende. Har prøvd flere ganger med flexbox - med ymse resultat.
+Grid i produktkortene fungerte med en gang, uten mye ekstra frem-og-tilbake-forsøk.
 
 
 Strand-bilde credit:
@@ -35,11 +36,14 @@ Image by <a href="https://pixabay.com/users/laurette57-1067505/?utm_source=link-
 Border-radius 
 https://www.w3schools.com/cssref/css3_pr_border-radius.php
 
-CSS hover:
+CSS hover, brukt på knapper:
 https://www.w3schools.com/cssref/sel_hover.php
 
 Grunnlag for 320px som start-bredde:
 https://www.w3.org/WAI/WCAG21/Understanding/reflow.html
 
-pseudo-klasser (hover etc.):
+pseudo-klasser, brukt på hover og søkefelt:
 https://www.w3schools.com/css/css_pseudo_classes.asp
+
+sticky-element, brukt på aside:
+https://www.w3schools.com/howto/howto_css_sticky_element.asp

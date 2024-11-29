@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nettside-test</title>
-    <link href="../ikoner/css/brands.css" rel="stylesheet">
-    <link href="../ikoner/css/fontawesome.css" rel="stylesheet">
-    <link href="../ikoner/css/regular.css" rel="stylesheet">
-    <link href="../ikoner/css/solid.css" rel="stylesheet">
+    <title>Forside</title>
+    <link href="../Nettsted/ikoner/css/brands.css" rel="stylesheet">
+    <link href="../Nettsted/ikoner/css/fontawesome.css" rel="stylesheet">
+    <link href="../Nettsted/ikoner/css/regular.css" rel="stylesheet">
+    <link href="../Nettsted/ikoner/css/solid.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../Nettsted/CSS/nettsted_stil.css">
-    <link rel="normalizeCSS" href="../Nettsted/CSS/normalize.css">
+    <link rel="normalize_CSS" href="../Nettsted/CSS/normalize.css">
 </head>
 <body class="grid-container">
     <header>
@@ -18,104 +18,182 @@
             <form class="search-bar-and-button">
                 <label for="search">Search</label>
                 <input type="search" placeholder="Search here" id="search">
-                <button href="index.html" id="submit" type="submit" value="Search"><i class="fa-solid fa-search"></i></button>
+                <button id="submit" type="submit" value="Search"><i class="fa-solid fa-search"></i></button>
             </form>
             <ul>
                 <li class="nav-link"><a href="index.html">Home</a></li>
                 <li class="nav-link"><a href="#">Products</a></li>
-                <li class="logo"><a href="index.html">LOGO</a></li>
+                <li><a href="index.html" class="logo">L<i class="fa-solid fa-earth-americas">GO</i></a></li>
                 <li class="nav-link"><a href="#categories">Categories</a></li>
                 <li class="nav-link"><a href="#products">Contact</a></li>
             </ul>
             <ul class="system-button">
-                <li><a href="#" id="user-button"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="product.html" id="user-button"><i class="fa-regular fa-user"></i></a></li>
                 <li><a href="#" id="heart-button"><i class="fa-regular fa-heart"></i></a></li>
-                <li><a href="#" id="cart-button"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="checkout.html" id="cart-button"><i class="fa-solid fa-cart-shopping"></i></a></li>
             </ul>
         </nav>
     </header>
     <main class="home-component">
         <section class="banner">
             <div class="banner-content">
-                <h2>Welcome!</h2>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum possimus mollitia 
-                    explicabo odio qui quibusdam animi blanditiis corrupti aliquid, saepe laboriosam 
-                    ducimus nisi fugit dolorum rem eaque suscipit pariatur sequi.
-                </p>
+                <h2>Lorem ipsum</h2>
+                <p id="banner-description"><span class="alt-size-1">L</span>orem, ipsum dolor sit amet consectetur adipisicing elit. Rerum possimus mollitia explicabo odio qui quibusdam animi blanditiis corrupti aliquid.</p>
                 <nav class="banner-buttons">
                     <button class="banner-button">Try now</button>
                     <button class="banner-button">Explore</button>
                 </nav>
             </div>
         </section>
-        <section class="flex-space-products">
+        <section class="flex-space-product-cards">
             <h3 id="products-h3">Våre mest populære produkter</h3>
-            <article class="product-card">
-                <img src="https://picsum.photos/300/300" alt="produkt">
-                <a href="#" class="product-name"><h4>Produktnavn</h4></a>
-                <p class="product-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt earum libero ipsam ea rerum architecto nam possimus adipisci dolore obcaecati harum, perferendis iusto ducimus, delectus voluptates! Quaerat tempora eveniet ea?</p>
+            <p id="products-summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam facilis doloribus illum odit temporibus consectetur eum quis quae, odio minus aut iste illo ipsam excepturi corporis eos sint. Voluptatum quos asperiores fugit iusto temporibus, odio aspernatur culpa id architecto accusamus corporis ab dignissimos assumenda sit recusandae reiciendis perferendis magnam ipsa?</p>
+            <article id="item-1" class="product-card-with-grid">
+                <a href="product.html">
+                    <img src="https://picsum.photos/300/300" alt="produkt">
+                </a>
+                <a class="product-name" href="product.html">
+                    <h4>Produktnavn</h4>
+                </a>
+                <a class="product-description" href="product.html">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </a>
             <ul class="product-card-rating">
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-regular fa-star"></li>
-                <li class="reviews">842 Reviews</li>
+                <li class="product-reviews">842 Reviews</li>
             </ul>
-                <p class="price">1999 kr</p>
-                <button a href="product.html" class="buy-button">Kjøp nå</button>
+            <button class="add-to-cart-button">Add to cart</button>
+            <p class="product-price">1999,-</p>
             </article>
-            <article class="product-card">
-                <img src="https://picsum.photos/300/300" alt="produkt">
-                <a href="#"><h4>Produktnavn</h4></a>
-                <p class="product-description">Dette er en kort beskrivelse av produktet.</p>
+            <article class="product-card-with-grid">
+                <a href="product.html">
+                    <img src="https://picsum.photos/300/300" alt="produkt">
+                </a>
+                <a class="product-name" href="product.html">
+                    <h4>Produktnavn</h4>
+                </a>
+                <a class="product-description" href="product.html">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </a>
             <ul class="product-card-rating">
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-regular fa-star"></li>
-                <li class="reviews">842 Reviews</li>
+                <li class="product-reviews">842 Reviews</li>
             </ul>
-                <p class="price">1999 kr</p>
-                <button class="buy-button">Kjøp nå</button>
+            <button class="add-to-cart-button">Add to cart</button>
+            <p class="product-price">1999,-</p>
             </article>
-            <article class="product-card">
-                <img src="https://picsum.photos/300/300" alt="produkt">
-                <a href="#"><h4>Produktnavn</h4></a>
-                <p class="product-description">Dette er en kort beskrivelse av produktet.</p>
+            <article class="product-card-with-grid">
+                <a href="product.html">
+                    <img src="https://picsum.photos/300/300" alt="produkt">
+                </a>
+                <a class="product-name" href="product.html">
+                    <h4>Produktnavn</h4>
+                </a>
+                <a class="product-description" href="product.html">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </a>
             <ul class="product-card-rating">
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-regular fa-star"></li>
-                <li class="reviews">842 Reviews</li>
+                <li class="product-reviews">842 Reviews</li>
             </ul>
-                <p class="price">1999 kr</p>
-                <button class="buy-button">Kjøp nå</button>
+            <button class="add-to-cart-button">Add to cart</button>
+            <p class="product-price">1999,-</p>
             </article>
-            <article class="product-card">
-                <img src="https://picsum.photos/300/300" alt="produkt">
-                <a href="#"><h4>Produktnavn</h4></a>
-                <p class="product-description">Dette er en kort beskrivelse av produktet.</p>
+            <article class="product-card-with-grid">
+                <a href="product.html">
+                    <img src="https://picsum.photos/300/300" alt="produkt">
+                </a>
+                <a class="product-name" href="product.html">
+                    <h4>Produktnavn</h4>
+                </a>
+                <a class="product-description" href="product.html">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </a>
             <ul class="product-card-rating">
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-solid fa-star"></li>
                 <li class="fa-regular fa-star"></li>
-                <li class="reviews">842 Reviews</li>
+                <li class="product-reviews">842 Reviews</li>
             </ul>
-                <p class="price">1999 kr</p>
-                <button class="buy-button">Kjøp nå</button>
+            <button class="add-to-cart-button">Add to cart</button>
+            <p class="product-price">1999,-</p>
+            </article>
+            <article class="product-card-with-grid">
+                <a href="product.html">
+                    <img src="https://picsum.photos/300/300" alt="produkt">
+                </a>
+                <a class="product-name" href="product.html">
+                    <h4>Produktnavn</h4>
+                </a>
+                <a class="product-description" href="product.html">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </a>
+            <ul class="product-card-rating">
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-regular fa-star"></li>
+                <li class="product-reviews">842 Reviews</li>
+            </ul>
+            <button class="add-to-cart-button">Add to cart</button>
+            <p class="product-price">1999,-</p>
+            </article>
+            <article class="product-card-with-grid">
+                <a href="product.html">
+                    <img src="https://picsum.photos/300/300" alt="produkt">
+                </a>
+                <a class="product-name" href="product.html">
+                    <h4>Produktnavn</h4>
+                </a>
+                <a class="product-description" href="product.html">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </a>
+            <ul class="product-card-rating">
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-solid fa-star"></li>
+                <li class="fa-regular fa-star"></li>
+                <li class="product-reviews">842 Reviews</li>
+            </ul>
+            <button class="add-to-cart-button">Add to cart</button>
+            <p class="product-price">1999,-</p>
             </article>
         </section>
         <section class="flex-space-categories">
             <h3 id="categories-h3">Våre mest populære kategorier</h3>
-            <article class="category-card">
-                <img src="https://picsum.photos/200/200" alt="Bildet viser en kategori">
+            <p id="categories-summary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quibusdam quam deserunt deleniti cupiditate sed perspiciatis ab quo quidem laboriosam amet animi, dolor consectetur sint tempore dolorum nulla velit corrupti iste. Laudantium, enim. Possimus deserunt cum, maiores nam eos numquam repellendus tempora harum provident asperiores vel quo, enim, ad distinctio!</p>
+            <article class="category-card" id="cat-1">
+                <h4>Kategori</h4>
+                <p class="category-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!</p>
+                <button class="category-button">Explore</button>
+            </article>
+            <article class="category-card" id="cat-2">
+                <h4>Kategori</h4>
+                <p class="category-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!</p>
+                <button class="category-button">Explore</button>
+            </article>
+            <article class="category-card" id="cat-3">
+                <h4>Kategori</h4>
+                <p class="category-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!</p>
+                <button class="category-button">Explore</button>
+            </article>
+            <article class="category-card" id="cat-4">
                 <h4>Kategori</h4>
                 <p class="category-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, aliquam!</p>
                 <button class="category-button">Explore</button>
@@ -145,9 +223,9 @@
             </ul>
             <ul>
                 <li><h3>Sosiale medier</h3></li>
-                <li><a href="https://www.facebook.com/">Facebook</a></li>
-                <li><a href="https://www.instagram.com/">Instagram</a></li>
-                <li><a href="https://twitter.com/?lang=nb">Twitter</a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                <li><a href="https://twitter.com/?lang=nb"><i class="fa-brands fa-square-twitter"></i>Twitter</a></li>
             </ul>
         </section>
     </footer>
